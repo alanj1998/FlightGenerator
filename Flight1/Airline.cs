@@ -49,7 +49,7 @@ namespace Flight1
         }
     }
 
-    static class Randomiser
+    class Randomiser
     {
         private static Random randomiser = new Random();
         public static int Randomise(int maxValue)

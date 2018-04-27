@@ -63,7 +63,7 @@ namespace Flight1
             for(int i = 0; i < flights.Count(); i++)
             {
                 flights[i] = new Flight();
-                if(flights[i].Time > DateTime.UtcNow)
+                if(flights[i].Time > DateTime.Now)
                 {
                     Departures.Add(flights[i]);
                 }

@@ -16,7 +16,7 @@ namespace Flight1
         {
             this.Airline = airline;
             this.FlightNo = Randomiser.Randomise(1, 999);
-            this.Time = DateTime.UtcNow.Add(new TimeSpan(0, 0, Randomiser.Randomise(-30, 30)));
+            this.Time = DateTime.Now.Add(new TimeSpan(0, 0, Randomiser.Randomise(-60, 60)));
         }
         public Flight() : this(new Airline()) { }
 
